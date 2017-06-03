@@ -34,10 +34,14 @@ body
 
 
 
-  mixin versionGroup(ssmlVersion)
+  mixin versionGroup(ssmlVersion, description, path)
     div.spacer
     div.panel.panel-default
-      div.panel-body.version-header= ssmlVersion
+      div.panel-body.version-header
+        span.glyphicon.glyphicon-bullhorn.version-icon
+        a(href=`${path}`, target="_blank", title="Go to SSML doc")
+          | #{ssmlVersion}
+          span.panel-description #{description}
     div.container-fluid
       div.row
         div.col-md-12.section1 syntax
@@ -74,7 +78,10 @@ body
         div.col-md-1
           div.check-value-text Unknown
   
-  +versionGroup('SSML 1.0')
+  +versionGroup('SSML 1.0', '(W3C Recommendation 7 September 2004)', 'https://www.w3.org/TR/speech-synthesis/')
+  //- +versionGroup('SSML 1.1', '(W3C Recommendation 7 September 2010)', 'https://www.w3.org/TR/speech-synthesis11/')
+  //- +versionGroup('Amazon Extensions', '', 'https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect')
+  
   //- +versionGroup('SSML 1.0')
   //- +versionGroup('SSML 1.0')
   //- +versionGroup('SSML 1.0')
