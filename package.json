@@ -1,0 +1,27 @@
+{
+  "name": "ssml-green",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "node.js",
+  "engine": {
+    "node": "5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmtuckerphx/ssml-green.git"
+  },
+  "private": true,
+  "dependencies": {
+    "get-then": "^1.0.0",
+    "jade": "^1.11.0",
+    "object.assign": "^3.0.1",
+    "pug": "^2.0.0-rc.2"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^7.1.2"
+  }
+}

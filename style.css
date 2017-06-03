@@ -1,0 +1,175 @@
+#ssml-green-logo img {
+  display: block;
+  height: 36px;
+  margin-top: -6px;
+}
+
+.ssml-title {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #fff;
+}
+
+#more {
+  margin-right: 10px;
+  margin-top:10px;  
+  margin-left:14px;
+}
+
+/*#more img {
+  height: 28px;
+  margin-right: 6px;
+}*/
+
+#more svg {
+  height: 32px;
+  margin-right: 6px;
+}
+
+
+#more a {
+  vertical-align: middle;
+  color: #fff;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+/*.show-grid [class^=col-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+}*/
+
+.spacer {
+  height: 70px;
+}
+
+.platform-header {
+    text-align: center;
+    background-color: #ccc;
+    border-right: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+}
+
+.platform-header+.platform-header {
+    border-left: 0;
+}
+
+/*.platform-header+.platform-header {
+    border-left: 1px solid #000;
+}*/
+
+/*.platform-header :first {
+    border-left: 1px solid #000;
+}
+
+.platform-header :last {
+    border-right: 1px solid #000;
+}*/
+
+
+.platform-header-text {
+    padding: 10px;
+}
+
+.platform-header a {
+  font-size: 14px;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+.check-value {
+  font-size: 16px;
+  vertical-align: middle;
+  text-indent: 10px;
+  line-height: 32px;
+  color: #777;
+  /*text-align: center;*/
+}
+
+.check-value-text {
+  padding: 6px;
+  text-align: center;
+  margin: 2px;
+  /*background: powderblue;*/
+}
+
+.amazon-alexa {
+  background-color: #0066c0;
+}
+
+.amazon-alexa a {
+  color: #fff;
+}
+
+.google-home {
+  background-color: #dd2c00;
+}
+
+.google-home a {
+  color: #fff;
+}
+
+.microsoft-cortana {
+  background-color: #2F2F2F;
+}
+
+.microsoft-cortana a {
+  color: #fff;
+}
+
+.ibm-watson {
+  background-color: #008571;
+}
+
+.ibm-watson a {
+  color: #fff;
+}
+
+.apple-siri {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+.apple-siri a {
+  color: #000;
+}
+
+.octicon {
+    vertical-align: text-bottom;
+    display: inline-block;
+    fill: currentColor;
+}
+
+.header-logo-invertocat .octicon-mark-github {
+    float: left;
+}
+
+.section1 {
+  font-size: 20px;
+  /*font-weight: bold;*/
+  background-color: #ddd;
+  border-color: #777;
+  line-height: 36px;
+  text-indent: 10px;
+}
+
+.section2 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 1px;
+  text-indent: 10px;
+  color: #337ab7;
+}
+
+.version-header {
+    color: #fff;
+    background-color: #337ab7;
+    font-size:22px;
+    font-weight: bold;
+}

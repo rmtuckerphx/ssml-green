@@ -1,0 +1,22 @@
+{
+    "amazon-alexa": {
+        "name": "Amazon Alexa",
+        "ssmlLink": "https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference"
+    },
+    "google-home": {
+        "name": "Google Home",
+        "ssmlLink": "https://developers.google.com/actions/reference/ssml"
+    },
+    "microsoft-cortana": {
+        "name": "Microsoft Cortana",
+        "ssmlLink": "https://docs.microsoft.com/en-us/cortana/reference/ssml"
+    },
+    "apple-siri": {
+        "name": "Apple Siri",
+        "ssmlLink": ""
+    },
+    "ibm-watson": {
+        "name": "IBM Watson",
+        "ssmlLink": "https://www.ibm.com/watson/developercloud/doc/text-to-speech/SSML.html"
+    }
+}

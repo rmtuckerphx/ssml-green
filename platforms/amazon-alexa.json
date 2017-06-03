@@ -1,0 +1,6 @@
+{
+    "SSML_1.0": {
+        "syntax›speak>speak tag fragment": true,
+        "syntax>speak>speak tag namespaced": false
+    }
+}
