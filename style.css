@@ -173,3 +173,21 @@
     font-size:22px;
     font-weight: bold;
 }
+
+.info-icon {
+  margin-top: 6px;
+  color: #777;
+}
+
+.info-icon:hover {
+  color: #337ab7;
+}
+
+.popover{
+    max-width:600px;
+}
+
+.code {
+    white-space: pre;
+    margin: 0 15px;
+}

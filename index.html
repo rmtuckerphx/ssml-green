@@ -54,7 +54,10 @@
         <div class="col-md-12 section2">speak</div>
       </div>
       <div class="row">
-        <div class="col-md-4 check-value">speak tag fragment</div>
+        <div class="col-md-4 check-value">
+           speak tag fragment<span class="glyphicon glyphicon-exclamation-sign pull-right info-icon" aria-hidden="true" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="&lt;speak&gt;
+Simple text to speech.
+&lt;/speak&gt;"></span></div>
         <div class="col-md-1">
           <div class="check-value-text bg-success">Yes</div>
         </div>
@@ -72,7 +75,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 check-value">speak tag namespaced</div>
+        <div class="col-md-4 check-value">
+           speak tag namespaced<span class="glyphicon glyphicon-exclamation-sign pull-right info-icon" aria-hidden="true" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="&lt;speak version=&quot;1.0&quot;
+xmlns=&quot;http://www.w3.org/2001/10/synthesis&quot;
+xml:lang=&quot;en-US&quot;&gt;
+Some text to speak.
+&lt;/speak&gt;"></span></div>
         <div class="col-md-1">
           <div class="check-value-text bg-success">Yes</div>
         </div>
@@ -92,4 +100,10 @@
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    
+  </script>
 </body>
