@@ -34,51 +34,80 @@ body
 
 
 
-  mixin versionGroup(ssmlVersion, description, path)
+  //- mixin section(version)
+  //-   each obj1, category in testers[version]
+  //-     - category2 = version+'-'+category.replace(/\W/g, '-')
+  //-     div.row
+  //-       div.col-md-12.section1 
+  //-         a(href='#'+category2)=category
+    //- div.row
+    //-   div.col-md-12.section2 #{section2}
+  
+
+  mixin versionGroup(name, version, description, path)
     div.spacer
     div.panel.panel-default
       div.panel-body.version-header
         span.glyphicon.glyphicon-bullhorn.version-icon
         a(href=`${path}`, target="_blank", title="Go to SSML doc")
-          | #{ssmlVersion}
+          | #{name}
           span.panel-description #{description}
     div.container-fluid
-      div.row
-        div.col-md-12.section1 syntax
-      div.row
-        div.col-md-12.section2 speak
+      each obj1, category in testers[version]
+        - var category2 = version+'-'+category.replace(/\W/g, '-')
+        div.row
+          div.col-md-12.section1
+            a(href='#'+category2)=category
+        each obj2, subcategory in obj1
+          - var subcategory2 = [category2,subcategory.replace(/\W/g, '-')].join('-')  
+          div.row
+            div.col-md-12.section2
+              a(href='#'+subcategory2)=subcategory
+          each obj3, subsubcategory in obj2
+            - var subsubcategory2 = [subcategory2,subsubcategory.replace(/\W/g, '-')].join('-')
+            div.row
+              div.col-md-4.check-value 
+                a(href='#'+subsubcategory2)=subsubcategory
+                span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
+              each platformName in Object.keys(headers)
+                div.col-md-1
+                  - var result = results(platformName, version, obj3.path)
+                  div.check-value-text(class=`${result.classes}`, title=`${result.tip}`)
+                    |  #{result.text}
 
-      div.row
-        div.col-md-4.check-value 
-          | speak tag fragment
-          span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content="<speak>\nSimple text to speech.\n</speak>")
-        div.col-md-1
-          div.check-value-text.bg-success Yes
-        div.col-md-1
-          div.check-value-text.bg-danger No
-        div.col-md-1
-          div.check-value-text.bg-danger No
-        div.col-md-1
-          div.check-value-text.bg-success Yes
-        div.col-md-1
-          div.check-value-text Unknown
+
+
+      //- div.row
+      //-   div.col-md-4.check-value 
+      //-     | speak tag fragment
+      //-     span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content="<speak>\nSimple text to speech.\n</speak>")
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-success Yes
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-danger No
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-danger No
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-success Yes
+      //-   div.col-md-1
+      //-     div.check-value-text Unknown
  
-      div.row
-        div.col-md-4.check-value 
-          | speak tag namespaced
-          span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content="<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>")
-        div.col-md-1
-          div.check-value-text.bg-success Yes
-        div.col-md-1
-          div.check-value-text.bg-danger No
-        div.col-md-1
-          div.check-value-text.bg-danger No
-        div.col-md-1
-          div.check-value-text.bg-success Yes
-        div.col-md-1
-          div.check-value-text Unknown
+      //- div.row
+      //-   div.col-md-4.check-value 
+      //-     | speak tag namespaced
+      //-     span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content="<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>")
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-success Yes
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-danger No
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-danger No
+      //-   div.col-md-1
+      //-     div.check-value-text.bg-success Yes
+      //-   div.col-md-1
+      //-     div.check-value-text Unknown
   
-  +versionGroup('SSML 1.0', '(W3C Recommendation 7 September 2004)', 'https://www.w3.org/TR/speech-synthesis/')
+  +versionGroup('SSML 1.0', 'SSML_1.0', '(W3C Recommendation 7 September 2004)', 'https://www.w3.org/TR/speech-synthesis/')
   //- +versionGroup('SSML 1.1', '(W3C Recommendation 7 September 2010)', 'https://www.w3.org/TR/speech-synthesis11/')
   //- +versionGroup('Amazon Extensions', '', 'https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect')
   

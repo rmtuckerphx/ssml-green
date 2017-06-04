@@ -1,6 +1,8 @@
 {
     "SSML_1.0": {
-        "syntax›speak>speak tag fragment": "<speak>\nSimple text to speech.\n</speak>",
-        "syntax>speak>speak tag namespaced": "<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>"
+        "syntax›speak›speak tag fragment": "<speak>\nSimple text to speech.\n</speak>",
+        "syntax›speak›speak tag namespaced": "<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>",
+        "syntax›break›simple syntax": "<break>",
+        "other›one›two": "<break>"
     }
 }

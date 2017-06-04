@@ -29,32 +29,35 @@ function requiresFlag (nodeVersion, esVersion, path) {
   return flagged && unflagged && flagged[path] === true && unflagged[path] !== true
 }
 
-function result (type, nodeVersion, esVersion, path) {
-  var result = $get(results, type, nodeVersion)
-  if (result === undefined) return ''
-  result = $get(result, esVersion, path)
+function result (platform, version, path) {
+  //var result = $get(platforms, platform, version)
+  //if (result === undefined) return {}
+  var result = $get(platforms[platform], version, path)
 
-  var flaggd = type === 'flagged'
-  var flagRequired = flaggd && requiresFlag(nodeVersion, esVersion, path)
-  var title = result === true ? (flagRequired ? 'Yes, but requires --harmony flag' : 'Test passed') : typeof result === 'string' ? result : 'Test failed'
-  result = result === true ? 'Yes' : typeof result === 'string' ? 'Error' : 'No'
-  return `<div class="${result} ${type} ${flagRequired ? 'required' : ''}" title="${$escape(title)}">${result === 'Yes' && flagRequired ? 'Flag' : result}</div>`
+  var title = result === true ? 'Supported' : typeof result === 'string' ? result : 'Not supported'
+  var classes = result === true ? 'bg-success' : typeof result === 'string' || result === undefined ? '' : 'bg-danger'
+  result = result === true ? 'Yes' : typeof result === 'string' || result === undefined ? 'Unknown' : 'No'
+
+  return {
+    'tip': $escape(title),
+    'text': result,
+    'classes': classes
+  }
+
+  // var flaggd = type === 'flagged'
+  // var flagRequired = flaggd && requiresFlag(nodeVersion, esVersion, path)
+  // var title = result === true ? (flagRequired ? 'Yes, but requires --harmony flag' : 'Test passed') : typeof result === 'string' ? result : 'Test failed'
+  // result = result === true ? 'Yes' : typeof result === 'string' ? 'Error' : 'No'
+  // return `<div class="${result} ${type} ${flagRequired ? 'required' : ''}" title="${$escape(title)}">${result === 'Yes' && flagRequired ? 'Flag' : result}</div>`
 }
 
 var html = pug.renderFile('index.pug', {
-  pretty: true,
-  flaggable: true,
   headers: headers,
   testers: testers,
-  results: function (nodeVersion, esVersion, path) {
-    return result('unflagged', nodeVersion, esVersion, path) + result('flagged', nodeVersion, esVersion, path)
+  platforms: platforms,
+  results: function (platform, version, path) {
+    return result(platform, version, path)
   },
-  requiresFlag: requiresFlag,
-  percent: function (nodeVersion, esVersion, unflagged) {
-    var datasource = unflagged ? results.unflagged : results.flagged
-    var data = $get(datasource, nodeVersion, esVersion)
-    return data ? Math.floor(data._percent * 100) : ''
-  }
 })
 
 require('fs').writeFileSync('./index.html', html)
