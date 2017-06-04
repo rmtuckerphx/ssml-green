@@ -1,4 +1,3 @@
-var jade = require('jade');
 var pug = require('pug');
 var utils = require('./utils.js');
 var $escape = utils.$escape
@@ -10,9 +9,9 @@ var platforms = {
 
 // const engine = 'v8'
 //var headers = require('./versions.js')(engine)
-var headers = require('./ssml-platforms.json')
+var headers = require('./data/ssml-platforms.json')
 Object.keys(headers).forEach((header) => {
-  platforms[header] = require(`./platforms/${header}.json`)
+  platforms[header] = require(`./data/platforms/${header}.json`)
 
   //convert to the actual headers view model
   // headers[header] = {

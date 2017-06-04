@@ -1,0 +1,25 @@
+{
+    "SSML_1.0": {
+        "elements›supported elements›<speak>": true,
+        "elements›supported elements›<p>": true,
+        "elements›supported elements›<s>": true,
+        "elements›supported elements›<w>": true,
+        "elements›supported elements›<say-as>": true,
+        "elements›supported elements›<phoneme>": true,
+        "elements›supported elements›<prosody>": true,
+        "elements›supported elements›<sub>": true,
+        "elements›supported elements›<break>": true,
+        "elements›supported elements›<mark>": false,
+        "elements›supported elements›<audio>": true,
+        "elements›supported elements›<desc>": false,
+        "elements›supported elements›<emphasis>": true,
+        "elements›supported elements›<lexicon>": false,
+        "elements›supported elements›<meta>": false,
+        "elements›supported elements›<metadata>": false,
+        "elements›supported elements›<voice>": false,
+
+        "syntax›speak›speak tag fragment": true,
+        "syntax›speak›speak tag namespaced": false,
+        "other›one›two": "test text"        
+    }
+}

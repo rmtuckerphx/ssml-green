@@ -13,7 +13,6 @@
   "private": true,
   "dependencies": {
     "get-then": "^1.0.0",
-    "jade": "^1.11.0",
     "object.assign": "^3.0.1",
     "pug": "^2.0.0-rc.2"
   },

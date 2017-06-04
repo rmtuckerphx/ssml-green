@@ -38,7 +38,7 @@ module.exports = {
   // This utility opens it and transforms it in to an object tree.
   objectifiedTesters: function () {
     var testers = {}
-    var _testers = require('./testers.json')
+    var _testers = require('./data/testers.json')
     Object.keys(_testers).forEach((ssmlVersion) => {
       testers[ssmlVersion] = {}
       Object.keys(_testers[ssmlVersion]).forEach((path) =>

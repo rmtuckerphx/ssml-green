@@ -1,0 +1,25 @@
+{
+    "SSML_1.0": {
+        "elements›supported elements›<speak>": "",
+        "elements›supported elements›<p>": "",
+        "elements›supported elements›<s>": "",
+        "elements›supported elements›<w>": "",
+        "elements›supported elements›<say-as>": "",
+        "elements›supported elements›<phoneme>": "",
+        "elements›supported elements›<prosody>": "",
+        "elements›supported elements›<sub>": "",
+        "elements›supported elements›<break>": "",
+        "elements›supported elements›<emphasis>": "",
+        "elements›supported elements›<audio>": "",
+        "elements›supported elements›<mark>": "",
+        "elements›supported elements›<desc>": "",
+        "elements›supported elements›<lexicon>": "",
+        "elements›supported elements›<meta>": "",
+        "elements›supported elements›<metadata>": "",
+        "elements›supported elements›<voice>": "",
+        "syntax›speak›speak tag fragment": "<speak>\nSimple text to speech.\n</speak>",
+        "syntax›speak›speak tag namespaced": "<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>",
+        "syntax›break›simple syntax": "<break>",
+        "other›one›two": "<break>"
+    }
+}
