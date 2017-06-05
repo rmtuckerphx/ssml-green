@@ -3,7 +3,6 @@
         "elements›supported elements›<speak>": "",
         "elements›supported elements›<p>": "",
         "elements›supported elements›<s>": "",
-        "elements›supported elements›<w>": "",
         "elements›supported elements›<say-as>": "",
         "elements›supported elements›<phoneme>": "",
         "elements›supported elements›<prosody>": "",
@@ -16,10 +15,16 @@
         "elements›supported elements›<lexicon>": "",
         "elements›supported elements›<meta>": "",
         "elements›supported elements›<metadata>": "",
-        "elements›supported elements›<voice>": "",
+        "elements›supported elements›<voice>": "<?xml version=\"1.0\"?>\r\n<speak version=\"1.0\" xmlns=\"http:\/\/www.w3.org\/2001\/10\/synthesis\"\r\n         xmlns:xsi=\"http:\/\/www.w3.org\/2001\/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http:\/\/www.w3.org\/2001\/10\/synthesis\r\n                   http:\/\/www.w3.org\/TR\/speech-synthesis\/synthesis.xsd\"\r\n         xml:lang=\"en-US\">   \r\n  <voice gender=\"female\">Mary had a little lamb,<\/voice>\r\n  <!-- now request a different female child's voice -->\r\n  <voice gender=\"female\" variant=\"2\">\r\n  Its fleece was white as snow.\r\n  <\/voice>\r\n  <!-- processor-specific voice selection -->\r\n  <voice name=\"Mike\">I want to be like Mike.<\/voice>\r\n<\/speak>",
         "syntax›speak›speak tag fragment": "<speak>\nSimple text to speech.\n</speak>",
         "syntax›speak›speak tag namespaced": "<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\nSome text to speak.\n</speak>",
         "syntax›break›simple syntax": "<break>",
         "other›one›two": "<break>"
-    }
+    },
+    "SSML_1.1": {
+        "elements›supported elements›<w>": ""
+    },    
+    "AMZ-EXT": {
+        "elements›supported elements›<amazon:effect>": "<speak>\nI want to tell you a secret.\n<amazon:effect name=\"whispered\">I am not a real human.</amazon:effect>.\nCan you believe it?\n</speak>"
+    }      
 }

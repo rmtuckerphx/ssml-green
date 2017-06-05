@@ -3,7 +3,6 @@
         "elements›supported elements›<speak>": true,
         "elements›supported elements›<p>": true,
         "elements›supported elements›<s>": true,
-        "elements›supported elements›<w>": false,
         "elements›supported elements›<say-as>": true,
         "elements›supported elements›<phoneme>": true,
         "elements›supported elements›<prosody>": true,
@@ -17,5 +16,8 @@
         "elements›supported elements›<meta>": false,
         "elements›supported elements›<metadata>": false,
         "elements›supported elements›<voice>": false        
-    }
+    },
+    "SSML_1.1": {
+        "elements›supported elements›<w>": false
+    }    
 }

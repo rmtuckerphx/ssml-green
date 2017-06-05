@@ -1,0 +1,18 @@
+{
+    "SSML_1.0": {
+        "name": "SSML 1.0",
+        "description": "(W3C Recommendation 7 September 2004)",
+        "path": "https://www.w3.org/TR/speech-synthesis/"
+    },
+    "SSML_1.1": {
+        "name": "SSML 1.1",
+        "description": "(W3C Recommendation 7 September 2010)",
+        "path": "https://www.w3.org/TR/speech-synthesis11/"
+    },
+    "AMZ-EXT": {
+        "name": "Amazon Extensions",
+        "description": "",
+        "path": "https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect"
+    }
+}
+  

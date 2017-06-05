@@ -11,7 +11,7 @@
 }
 
 #more {
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   margin-top:10px;  
   margin-left:14px;
 }
@@ -23,7 +23,7 @@
 
 #more svg {
   height: 32px;
-  margin-right: 6px;
+  /*margin-right: 6px;*/
 }
 
 
@@ -46,7 +46,7 @@
 }*/
 
 .spacer {
-  height: 70px;
+  height: 54px;
 }
 
 .platform-header {
@@ -54,6 +54,9 @@
     background-color: #ccc;
     border-right: 1px solid #e7e7e7;
     border-left: 1px solid #e7e7e7;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 50px;    
 }
 
 .platform-header+.platform-header {
@@ -74,7 +77,7 @@
 
 
 .platform-header-text {
-    padding: 10px;
+    padding-top: 4px;
 }
 
 .platform-header a {
@@ -150,7 +153,7 @@
 }
 
 .section1 {
-  font-size: 20px;
+  font-size: 16px;
   /*font-weight: bold;*/
   background-color: #ddd;
   border-color: #777;
@@ -161,7 +164,7 @@
 
 .section2 {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   border-bottom: solid 1px;
   text-indent: 10px;
@@ -171,8 +174,10 @@
 .version-header {
     color: #fff;
     background-color: #337ab7;
-    font-size:22px;
-    font-weight: bold;
+    font-size:18px;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: -40px;    
 }
 
 .version-header a {
@@ -202,6 +207,6 @@
 }
 
 .panel-description {
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 10px;
 }

@@ -7,8 +7,7 @@ var testers = utils.objectifiedTesters();
 var platforms = {
 }
 
-// const engine = 'v8'
-//var headers = require('./versions.js')(engine)
+var groups = require('./data/groups.json')
 var headers = require('./data/ssml-platforms.json')
 Object.keys(headers).forEach((header) => {
   platforms[header] = require(`./data/platforms/${header}.json`)
@@ -35,7 +34,7 @@ function result (platform, version, path) {
 
   var title = result === true ? 'Supported' : typeof result === 'string' ? result : 'Not supported'
   var classes = result === true ? 'bg-success' : typeof result === 'string' || result === undefined ? '' : 'bg-danger'
-  result = result === true ? 'Yes' : typeof result === 'string' || result === undefined ? 'Unknown' : 'No'
+  result = result === true ? 'Yes' : typeof result === 'string' || result === undefined ? '' : 'No'
 
   return {
     'tip': $escape(title),
@@ -52,6 +51,7 @@ function result (platform, version, path) {
 
 var html = pug.renderFile('index.pug', {
   headers: headers,
+  groups: groups,
   testers: testers,
   platforms: platforms,
   results: function (platform, version, path) {

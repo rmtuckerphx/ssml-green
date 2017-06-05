@@ -3,7 +3,6 @@
         "elements›supported elements›<speak>": true,
         "elements›supported elements›<p>": true,
         "elements›supported elements›<s>": true,
-        "elements›supported elements›<w>": true,
         "elements›supported elements›<say-as>": true,
         "elements›supported elements›<phoneme>": true,
         "elements›supported elements›<prosody>": true,
@@ -21,5 +20,11 @@
         "syntax›speak›speak tag fragment": true,
         "syntax›speak›speak tag namespaced": false,
         "other›one›two": "test text"        
-    }
+    },
+    "SSML_1.1": {
+        "elements›supported elements›<w>": true
+    },    
+    "AMZ-EXT": {
+        "elements›supported elements›<amazon:effect>": true
+    }    
 }
