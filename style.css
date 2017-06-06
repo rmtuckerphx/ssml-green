@@ -51,7 +51,7 @@
 
 .platform-header {
     text-align: center;
-    background-color: #ccc;
+    /*background-color: #555;*/
     border-right: 1px solid #e7e7e7;
     border-left: 1px solid #e7e7e7;
     padding-left: 0px;
@@ -63,27 +63,16 @@
     border-left: 0;
 }
 
-/*.platform-header+.platform-header {
-    border-left: 1px solid #000;
-}*/
-
-/*.platform-header :first {
-    border-left: 1px solid #000;
-}
-
-.platform-header :last {
-    border-right: 1px solid #000;
-}*/
-
-
 .platform-header-text {
-    padding-top: 4px;
+    /*padding-top: 4px;*/
+    background-color: #555;
 }
 
 .platform-header a {
   font-size: 14px;
   vertical-align: middle;
   white-space: normal;
+  color: #fff;
 }
 
 .check-value {
@@ -99,47 +88,6 @@
   padding: 6px;
   text-align: center;
   margin: 2px;
-  /*background: powderblue;*/
-}
-
-.amazon-alexa {
-  background-color: #0066c0;
-}
-
-.amazon-alexa a {
-  color: #fff;
-}
-
-.google-home {
-  background-color: #dd2c00;
-}
-
-.google-home a {
-  color: #fff;
-}
-
-.microsoft-cortana {
-  background-color: #2F2F2F;
-}
-
-.microsoft-cortana a {
-  color: #fff;
-}
-
-.ibm-watson {
-  background-color: #008571;
-}
-
-.ibm-watson a {
-  color: #fff;
-}
-
-.apple-siri {
-  background-color: rgba(240, 240, 240, 0.9);
-}
-
-.apple-siri a {
-  color: #000;
 }
 
 .octicon {
@@ -210,3 +158,60 @@
   font-size: 14px;
   margin-left: 10px;
 }
+
+/*.ssml-amazon-alexa {
+  background-color: #0066c0;
+}*/
+
+/*.ssml-amazon-alexa a {
+  color: #fff;
+}*/
+
+.ssml-google-home {
+  background-color:#3B78E7;
+}
+
+/*.ssml-google-home a {
+  color: #fff;
+}*/
+
+.ssml-microsoft-cortana {
+  background-color: #00AEEF;
+}
+
+/*.ssml-microsoft-cortana a {
+  color: #fff;
+}*/
+
+.ssml-ibm-watson {
+  background-color: #008571;
+}
+
+/*.ssml-ibm-watson a {
+  color: #fff;
+}*/
+
+.ssml-amazon-alexa, .ssml-amazon-polly {
+  background-color: #e47911;
+}
+
+/*.ssml-amazon-polly a {
+  color: #fff;
+}*/
+
+.ssml-blank {
+  background-color: #333;
+}
+
+
+.ssml-yes {
+  background-color: #026e00;
+  color: #fff;
+}
+
+.ssml-no {
+  background-color: #dd0000;
+  color: #fff;
+}
+
+

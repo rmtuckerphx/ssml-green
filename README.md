@@ -3,7 +3,7 @@ This project allows voice designers and developers to understand how SSML is imp
 - Amazon Alexa
 - Google Home
 - Microsoft Cortana
-- Apple Siri
+- Amazon Polly
 - IBM Watson
 
 ## Making change to the webpage

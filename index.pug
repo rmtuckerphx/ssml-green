@@ -20,7 +20,7 @@ body
         div.col-md-7
           div.row
             each header, key in headers
-              div.col-md-1.platform-header(class=`${key}`)
+              div.col-md-1.platform-header(class=`ssml-${key}`)
                 div.platform-header-text
                   a(href=`${header.ssmlLink}`, target="_blank", title="Go to SSML doc")
                     != header.name.replace(/\W/g, '<br/>')

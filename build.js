@@ -8,17 +8,9 @@ var platforms = {
 }
 
 var groups = require('./data/groups.json')
-var headers = require('./data/ssml-platforms.json')
+var headers = require('./data/platforms.json')
 Object.keys(headers).forEach((header) => {
   platforms[header] = require(`./data/platforms/${header}.json`)
-
-  //convert to the actual headers view model
-  // headers[header] = {
-  //   super: '',
-  //   name: platforms[header].name,
-  //   ssmlLink: platforms[header].ssmlLink,
-  //   includes: ''
-  // }
 })
 
 function requiresFlag (nodeVersion, esVersion, path) {
@@ -28,12 +20,10 @@ function requiresFlag (nodeVersion, esVersion, path) {
 }
 
 function result (platform, version, path) {
-  //var result = $get(platforms, platform, version)
-  //if (result === undefined) return {}
   var result = $get(platforms[platform], version, path)
 
   var title = result === true ? 'Supported' : typeof result === 'string' ? result : 'Not supported'
-  var classes = result === true ? 'bg-success' : typeof result === 'string' || result === undefined ? '' : 'bg-danger'
+  var classes = result === true ? 'ssml-yes' : typeof result === 'string' || result === undefined ? '' : 'ssml-no'
   result = result === true ? 'Yes' : typeof result === 'string' || result === undefined ? '' : 'No'
 
   return {
@@ -41,12 +31,6 @@ function result (platform, version, path) {
     'text': result,
     'classes': classes
   }
-
-  // var flaggd = type === 'flagged'
-  // var flagRequired = flaggd && requiresFlag(nodeVersion, esVersion, path)
-  // var title = result === true ? (flagRequired ? 'Yes, but requires --harmony flag' : 'Test passed') : typeof result === 'string' ? result : 'Test failed'
-  // result = result === true ? 'Yes' : typeof result === 'string' ? 'Error' : 'No'
-  // return `<div class="${result} ${type} ${flagRequired ? 'required' : ''}" title="${$escape(title)}">${result === 'Yes' && flagRequired ? 'Flag' : result}</div>`
 }
 
 var html = pug.renderFile('index.pug', {

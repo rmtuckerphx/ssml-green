@@ -1,23 +1,26 @@
 {
     "SSML_1.0": {
-        "elements›supported elements›<speak>": true,
-        "elements›supported elements›<p>": true,
-        "elements›supported elements›<s>": true,
-        "elements›supported elements›<say-as>": true,
-        "elements›supported elements›<phoneme>": false,
-        "elements›supported elements›<prosody>": false,
-        "elements›supported elements›<sub>": true,
-        "elements›supported elements›<break>": true,
-        "elements›supported elements›<mark>": false,
-        "elements›supported elements›<audio>": true,
-        "elements›supported elements›<desc>": false,
-        "elements›supported elements›<emphasis>": false,
-        "elements›supported elements›<lexicon>": false,
-        "elements›supported elements›<meta>": false,
-        "elements›supported elements›<metadata>": false,
-        "elements›supported elements›<voice>": false
+        "summary›supported elements›<speak>": true,
+        "summary›supported elements›<p>": true,
+        "summary›supported elements›<s>": true,
+        "summary›supported elements›<say-as>": true,
+        "summary›supported elements›<phoneme>": false,
+        "summary›supported elements›<prosody>": false,
+        "summary›supported elements›<sub>": true,
+        "summary›supported elements›<break>": true,
+        "summary›supported elements›<mark>": false,
+        "summary›supported elements›<audio>": true,
+        "summary›supported elements›<desc>": false,
+        "summary›supported elements›<emphasis>": false,
+        "summary›supported elements›<lexicon>": false,
+        "summary›supported elements›<meta>": false,
+        "summary›supported elements›<metadata>": false,
+        "summary›supported elements›<voice>": false
     },
     "SSML_1.1": {
-        "elements›supported elements›<w>": false
+        "summary›supported elements›<w>": false,
+        "summary›supported elements›<lang>": false,
+        "summary›supported elements›<token>": false,
+        "summary›supported elements›<lookup>": false  
     }    
 }

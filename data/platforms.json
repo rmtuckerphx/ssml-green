@@ -11,10 +11,14 @@
         "name": "Microsoft Cortana",
         "ssmlLink": "https://docs.microsoft.com/en-us/cortana/reference/ssml"
     },
-    "apple-siri": {
-        "name": "Apple Siri",
+    "blank": {
+        "name": "",
         "ssmlLink": ""
-    },
+    },    
+    "amazon-polly": {
+        "name": "Amazon Polly",
+        "ssmlLink": "http://docs.aws.amazon.com/polly/latest/dg/supported-ssml.html"
+    },    
     "ibm-watson": {
         "name": "IBM Watson",
         "ssmlLink": "https://www.ibm.com/watson/developercloud/doc/text-to-speech/SSML.html"

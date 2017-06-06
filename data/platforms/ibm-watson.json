@@ -1,4 +1,26 @@
 {
     "SSML_1.0": {
-    }
+        "summary›supported elements›<speak>": true,
+        "summary›supported elements›<p>": true,
+        "summary›supported elements›<s>": true,
+        "summary›supported elements›<say-as>": true,
+        "summary›supported elements›<phoneme>": true,
+        "summary›supported elements›<prosody>": true,
+        "summary›supported elements›<sub>": true,
+        "summary›supported elements›<break>": true,
+        "summary›supported elements›<mark>": true,
+        "summary›supported elements›<audio>": false,
+        "summary›supported elements›<desc>": false,
+        "summary›supported elements›<emphasis>": false,
+        "summary›supported elements›<lexicon>": false,
+        "summary›supported elements›<meta>": false,
+        "summary›supported elements›<metadata>": false,
+        "summary›supported elements›<voice>": false 
+    },
+    "SSML_1.1": {
+        "summary›supported elements›<w>": false,
+        "summary›supported elements›<lang>": false,
+        "summary›supported elements›<token>": false,
+        "summary›supported elements›<lookup>": false  
+    }  
 }
