@@ -44,18 +44,21 @@ body
         - var category2 = version+'-'+category.replace(/\W/g, '-')
         div.row
           div.col-md-12.section1
+            .hash(id=category2)
             a(href='#'+category2)=category
         each obj2, subcategory in obj1
           - var subcategory2 = [category2,subcategory.replace(/\W/g, '-')].join('-')  
           div.row
             div.col-md-12.section2
+              .hash(id=subcategory2)
               a(href='#'+subcategory2)=subcategory
           each obj3, subsubcategory in obj2
             - var subsubcategory2 = [subcategory2,subsubcategory.replace(/\W/g, '-')].join('-')
             div.row
-              div.col-md-4.check-value 
+              div.col-md-4.check-value
+                .hash(id=subsubcategory2)               
                 a(href='#'+subsubcategory2)=subsubcategory
-                span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
+                span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
               div.col-md-7
                 div.row              
                   each platformName in Object.keys(headers)

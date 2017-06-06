@@ -21,6 +21,11 @@ function $set (target, path, value) {
 
   obj[last] = value
 }
+
+function $escape (str) {
+  return str.replace(/[&<>"'\/]/g, (x) => replacements[x])
+}
+
 const replacements = {
   '&': '&amp;',
   '<': '&lt;',
@@ -33,19 +38,23 @@ const replacements = {
 module.exports = {
   $get,
   $set,
+  $escape,
   // The structure of the testers.json data focused on keeping it simple
   // if looking at the raw file, but it isn't too useful programmatically.
   // This utility opens it and transforms it in to an object tree.
   objectifiedTesters: function () {
     var testers = {}
+    var code = '';
     var _testers = require('./data/testers.json')
     Object.keys(_testers).forEach((ssmlVersion) => {
       testers[ssmlVersion] = {}
-      Object.keys(_testers[ssmlVersion]).forEach((path) =>
-        $set(testers[ssmlVersion], path, {path: path, code: _testers[ssmlVersion][path]})
+      Object.keys(_testers[ssmlVersion]).forEach((path) => {
+        code = $escape(_testers[ssmlVersion][path])
+        code = '<pre class"code">' + code + '</pre>'
+        $set(testers[ssmlVersion], path, {path: path, code: code})
+      }
       )
     })
     return testers
-  },
-  $escape: (str) => str.replace(/[&<>"'\/]/g, (x) => replacements[x])
+  }  
 }

@@ -100,6 +100,11 @@
     float: left;
 }
 
+.hash {
+    position: absolute;
+    margin-top: -52px;
+}
+
 .section1 {
   font-size: 16px;
   /*font-weight: bold;*/
@@ -146,8 +151,11 @@
 }
 
 .code {
-    white-space: pre;
+    white-space: pre-wrap;
+    font-family: monospace;
     margin: 0 15px;
+    background-color: #fff;
+    border-color: #fff;    
 }
 
 .version-icon {
@@ -214,4 +222,8 @@
   color: #fff;
 }
 
+.ssml-other {
+  background-color: #ddd;
+  color: #000;
+}
 

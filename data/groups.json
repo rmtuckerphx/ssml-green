@@ -9,10 +9,20 @@
         "description": "(W3C Recommendation 7 September 2010)",
         "path": "https://www.w3.org/TR/speech-synthesis11/"
     },
+    "COMMON": {
+        "name": "Possibly Shared",
+        "description": "(Non-standard)",
+        "path": ""
+    },    
     "AMZ-EXT": {
         "name": "Amazon Extensions",
         "description": "",
         "path": "https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect"
-    }
+    },
+    "IBM-EXT": {
+        "name": "IBM Extensions",
+        "description": "",
+        "path": ""
+    }    
 }
   

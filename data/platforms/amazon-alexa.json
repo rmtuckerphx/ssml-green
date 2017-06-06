@@ -17,9 +17,8 @@
         "summary›supported elements›<metadata>": false,
         "summary›supported elements›<voice>": false,
 
-        "syntax›speak›speak tag fragment": true,
-        "syntax›speak›speak tag namespaced": false,
-        "other›one›two": "test text"        
+        "elements›<speak>›fragment": true,
+        "elements›<speak>›with namespaces": false
     },
     "SSML_1.1": {
         "summary›supported elements›<w>": true,
