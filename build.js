@@ -23,8 +23,8 @@ function result (platform, version, path) {
   var result = $get(platforms[platform], version, path)
 
   var title = result === true ? 'Supported' : typeof result === 'string' ? result : 'Not supported'
-  var classes = result === true ? 'ssml-yes' : typeof result === 'string' ? 'ssml-other' : result === undefined ? '' : 'ssml-no'
-  result = result === true ? 'Yes' : typeof result === 'string' ? result : result === undefined ? '' : 'No'
+  var classes = result === true ? 'ssml-yes' : typeof result === 'string' ? 'ssml-other' : result === undefined || result === null ? '' : 'ssml-no'
+  result = result === true ? 'Yes' : typeof result === 'string' ? result : result === undefined || result === null ? '' : 'No'
 
   return {
     'tip': $escape(title),
