@@ -65,7 +65,8 @@ body
               div.col-md-4.check-value
                 .hash(id=subsubcategory2)               
                 a(href='#'+subsubcategory2)=subsubcategory
-                span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
+                if obj3.code !== null
+                  span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
               div.col-md-7
                 div.row              
                   each platformName in Object.keys(headers)
