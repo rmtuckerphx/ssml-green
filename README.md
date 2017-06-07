@@ -25,9 +25,9 @@ $ node build.js
 
 The data files:
 - **platforms.json** - The columns that will be shown (determines display order). Adding an entry to this file requires adding a file under the `/data/platforms` folder.
-- **groups.json** - The groupings of specs (determines display order). Adding an entry to this file requires a section to be added the `specs.json` file and any file under `/data/platforms` the has values in that group.
-- **specs.json** - The rows that will be shown inside a group (determines display order). The keys in this file are separated by the `›` character not the greater than `>` character and form the hierarchy shown in the table. The value is a code snippet to display.
-- **/data/platforms/*.json** files - This file needs to show only those groups that have specs for the specific platform. For example, the `google-home.json` file will not have an **AMZ-EXT** group because it doesn't apply. If a give spec is missing from this file, then the corresponding space in the grid will be blank/white. If the value is true, it will show as green. If the value is false, it will show red. If the value is a text value, it will show the text with a gray background.
+- **groups.json** - The groupings of specs (determines display order). Adding an entry to this file requires a section to be added to the `specs.json` file and any file under `/data/platforms` that has values in that group.
+- **specs.json** - The rows that will be shown inside a group (determines display order). The keys in this file are separated by the `›` character (not the greater than `>` character) and form the hierarchy shown in the table. The value is a code snippet to display.
+- **/data/platforms/*.json** files - These files need to show only those groups that have specs for the specific platform. For example, the `google-home.json` file will not have an **AMZ-EXT** group because it doesn't apply. If a give spec is missing from this file, then the corresponding space in the grid will be blank/white. If the value is true, it will show as green. If the value is false, it will show red. If the value is a text value, it will show the text with a gray background.
 
 ## Contributors:
 - Mark Tucker
