@@ -22,8 +22,15 @@
         "summary›supported elements›<lang>": true,
         "summary›supported elements›<token>": false,
         "summary›supported elements›<lookup>": false  
-    },    
+    },
+    "COMMON": {
+        "attribute values›<phoneme>›alphabet=\"x-sampa\"": true                     
+    },        
     "AMZ-EXT": {
-        "summary›supported elements›<amazon:effect>": true
+        "summary›supported elements›<amazon:effect>": true,
+
+        "attribute values›<w>›role=\"amazon:VB\"": true,        
+        "attribute values›<w>›role=\"amazon:VBD\"": true,        
+        "attribute values›<w>›role=\"amazon:SENSE_1\"": true          
     }    
 }

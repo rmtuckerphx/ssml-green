@@ -39,13 +39,13 @@ module.exports = {
   $get,
   $set,
   $escape,
-  // The structure of the testers.json data focused on keeping it simple
+  // The structure of the specs.json data focused on keeping it simple
   // if looking at the raw file, but it isn't too useful programmatically.
   // This utility opens it and transforms it in to an object tree.
   objectifiedTesters: function () {
     var testers = {}
     var code = '';
-    var _testers = require('./data/testers.json')
+    var _testers = require('./data/specs.json')
     Object.keys(_testers).forEach((ssmlVersion) => {
       testers[ssmlVersion] = {}
       Object.keys(_testers[ssmlVersion]).forEach((path) => {

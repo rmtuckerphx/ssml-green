@@ -1,0 +1,219 @@
+{
+    "SSML_1.0": {
+        "summary›supported elements›<speak>": "<speak>\n   Simple text to speech.\n</speak>",
+        "summary›supported elements›<p>": "<speak>\n  <p>\n    <s>This is the first sentence of the paragraph</s>\n    <s>Here's another sentence.</s>\n  </p>\n</speak>",
+        "summary›supported elements›<s>": "<speak>\n  <p>\n    <s>This is the first sentence of the paragraph</s>\n    <s>Here's another sentence.</s>\n  </p>\n</speak>",
+        "summary›supported elements›<say-as>": "<speak>\n    Here is a number spoken as a cardinal number: \n    <say-as interpret-as=\"cardinal\">12345</say-as>.\n    Here is the same number with each digit spoken separately:\n    <say-as interpret-as=\"digits\">12345</say-as>.\n    Here is a word spelled out: <say-as interpret-as=\"spell-out\">hello</say-as>\n</speak>\nspeak\n",
+        "summary›supported elements›<phoneme>": "<speak>\n    You say, <phoneme alphabet=\"ipa\" ph=\"pɪˈkɑːn\">pecan</phoneme>. \n    I say, <phoneme alphabet=\"ipa\" ph=\"ˈpi.kæn\">pecan</phoneme>.\n</speak>\n",
+        "summary›supported elements›<prosody>": "<speak>\n    Normal volume for the first sentence.\n    <prosody volume=\"x-loud\">Louder volume for the second sentence</prosody>.\n    When I wake up, <prosody rate=\"x-slow\">I speak quite slowly</prosody>.\n    I can speak with my normal pitch, \n    <prosody pitch=\"x-high\"> but also with a much higher pitch </prosody>, \n    and also <prosody pitch=\"low\">with a lower pitch</prosody>.\n</speak>",
+        "summary›supported elements›<sub>": "<speak>\n  <sub alias=\"Speech Synthesis Markup Language\">SSML</sub>\n</speak>",
+        "summary›supported elements›<break>": "<speak>\n    There is a three second pause here <break time=\"3s\"/> \n    then the speech continues.\n</speak> ",
+        "summary›supported elements›<emphasis>": "<speak>\n  That is a <emphasis> big </emphasis> car!\n  That is a <emphasis level=\"strong\"> huge </emphasis>\n  bank account!\n</speak>",
+        "summary›supported elements›<audio>": "<speak>\n    Just wanted to say\n    <audio src=\"https://someurl.com/audio/welcome.mp3\" /> \n</speak> ",
+        "summary›supported elements›<mark>": "<speak>\n    Go from <mark name=\"here\"/> here, to <mark name=\"there\"/> there! \n</speak> ",
+        "summary›supported elements›<desc>": "<speak>\n    Just wanted to say\n    <audio src=\"https://someurl.com/audio/welcome.mp3\">\n      <desc>The word welcome</desc>\n    </audio>\n </speak> ",
+        "summary›supported elements›<lexicon>": "<speak version=\"1.0\"\n       xmlns=\"http://www.w3.org/2001/10/synthesis\"\n       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n       xsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis\n                 http://www.w3.org/TR/speech-synthesis/synthesis.xsd\"\n       xml:lang=\"en-US\">\n\n  <lexicon uri=\"http://www.example.com/lexicon.file\"/>\n  <lexicon uri=\"http://www.example.com/strange-words.file\"\n           type=\"media-type\"/>\n  ...\n</speak>",
+        "summary›supported elements›<meta>": "<?xml version=\"1.0\"?>\n<!DOCTYPE speak PUBLIC \"-//W3C//DTD SYNTHESIS 1.0//EN\"\n                  \"http://www.w3.org/TR/speech-synthesis/synthesis.dtd\">\n<speak version=\"1.0\"\n       xmlns=\"http://www.w3.org/2001/10/synthesis\"\n       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n       xsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis\n                 http://www.w3.org/TR/speech-synthesis/synthesis.xsd\"\n       xml:lang=\"en-US\">\n\n       <meta name=\"seeAlso\" content=\"http://example.com/my-ssml-metadata.xml\"/>\n       <meta http-equiv=\"Cache-Control\" content=\"no-cache\"/>\n\n</speak>",
+        "summary›supported elements›<metadata>": "<?xml version=\"1.0\"?>\n<!DOCTYPE speak PUBLIC \"-//W3C//DTD SYNTHESIS 1.0//EN\"\n                  \"http://www.w3.org/TR/speech-synthesis/synthesis.dtd\">\n<speak version=\"1.0\"\n       xmlns=\"http://www.w3.org/2001/10/synthesis\"\n       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n       xsi:schemaLocation=\"http://www.w3.org/2001/10/synthesis\n                 http://www.w3.org/TR/speech-synthesis/synthesis.xsd\"\n       xml:lang=\"en-US\">\n    \n  <metadata>\n   <rdf:RDF\n       xmlns:rdf = \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n       xmlns:rdfs = \"http://www.w3.org/2000/01/rdf-schema#\"\n       xmlns:dc = \"http://purl.org/dc/elements/1.1/\">\n\n   <!-- Metadata about the synthesis document -->\n   <rdf:Description rdf:about=\"http://www.example.com/meta.ssml\"\n       dc:Title=\"Hamlet-like Soliloquy\"\n       dc:Description=\"Aldine's Soliloquy in the style of Hamlet\"\n       dc:Publisher=\"W3C\"\n       dc:Language=\"en-US\"\n       dc:Date=\"2002-11-29\"\n       dc:Rights=\"Copyright 2002 Aldine Turnbet\"\n       dc:Format=\"application/ssml+xml\" >                \n       <dc:Creator>\n          <rdf:Seq ID=\"CreatorsAlphabeticalBySurname\">\n             <rdf:li>William Shakespeare</rdf:li>\n             <rdf:li>Aldine Turnbet</rdf:li>\n          </rdf:Seq>\n       </dc:Creator>\n   </rdf:Description>\n  </rdf:RDF>\n </metadata>\n\n</speak>",
+        "summary›supported elements›<voice>": "<speak>\n  <voice gender=\"female\">Mary had a little lamb,<\/voice>\n\n  <!-- now request a different female child's voice -->\n  <voice gender=\"female\" variant=\"2\">\n    Its fleece was white as snow.\n  <\/voice>\n\n  <!-- processor-specific voice selection -->\n  <voice name=\"Mike\">I want to be like Mike.<\/voice>\n<\/speak>",
+
+        "elements›<audio>›src (required)": "",
+
+        "elements›<break>›strength (optional)": "",
+        "elements›<break>›time (optional)": "",
+
+        "elements›<desc>›xml:lang (optional)": "",
+
+        "elements›<empahsis>›level (optional)": "",
+
+        "elements›<lexicon>›uri (required)": "",
+        "elements›<lexicon>›type (optional)": "",
+
+        "elements›<mark>›name (required)": "",
+        "elements›<meta>›content (required)": "",
+
+        "elements›<meta>›http-equiv (required)": "",
+        "elements›<meta>›name=\"seeAlso\" (required)": "",
+
+        "elements›<p> (paragraph)›xml:lang (optional)": "",
+
+        "elements›<phoneme>›alphabet (optional)": "",
+        "elements›<phoneme>›ph (required)": "",
+
+        "elements›<prosody>›contour (optional)": "",
+        "elements›<prosody>›duration (optional)": "",
+        "elements›<prosody>›pitch (optional)": "",
+        "elements›<prosody>›range (optional)": "",
+        "elements›<prosody>›rate (optional)": "",
+        "elements›<prosody>›volume (optional)": "",
+
+        "elements›<s> (sentence)›xml:lang (optional)": "",
+
+        "elements›<say-as>›interpret-as (required)": "",
+        "elements›<say-as>›format (optional)": "",
+        "elements›<say-as>›detail (optional)": "",
+
+        "elements›<speak>›fragment": "<speak>\n   Simple text to speech.\n</speak>",
+        "elements›<speak>›with namespaces": "<speak version=\"1.0\"\nxmlns=\"http://www.w3.org/2001/10/synthesis\"\nxml:lang=\"en-US\">\n  Some text to speak.\n</speak>",
+        "elements›<speak>›version=\"1.0\" (required)": "",
+        "elements›<speak>›xml:base (optional)": "",
+        "elements›<speak>›xml:lang (required)": "",
+
+        "elements›<sub>›alias (required)": "",
+
+        "elements›<voice>›xml:lang (required)": "",
+        "elements›<voice>›age (optional)": "",
+        "elements›<voice>›gender (optional)": "",
+        "elements›<voice>›name (optional)": "",
+        "elements›<voice>›variant (optional)": "",
+
+        "attribute values›<phoneme>›alphabet=\"ipa\"": "",
+
+        "attribute values›<emphasis>›level=\"strong\"": "",        
+        "attribute values›<emphasis>›level=\"moderate\" (default)": "",        
+        "attribute values›<emphasis>›level=\"none\"": "",        
+        "attribute values›<emphasis>›level=\"reduced\"": "",
+
+        "attribute values›<break>›strength=\"none\"": "",        
+        "attribute values›<break>›strength=\"x-weak\"": "",        
+        "attribute values›<break>›strength=\"weak\"": "",        
+        "attribute values›<break>›strength=\"medium\" (default)": "",        
+        "attribute values›<break>›strength=\"strong\"": "",        
+        "attribute values›<break>›strength=\"x-strong\"": "",
+
+        "attribute values›<prosody>›contour=\"(n%, nHz), ...\"": "",         
+        "attribute values›<prosody>›contour=\"(n%, +nHz), ...\"": "",         
+        "attribute values›<prosody>›contour=\"(n%, -nHz), ...\"": "",         
+        "attribute values›<prosody>›contour=\"(n%, label), ...\"": "",
+
+        "attribute values›<prosody>›pitch=\"nHz\"": "",        
+        "attribute values›<prosody>›pitch=\"+nHz\"": "",        
+        "attribute values›<prosody>›pitch=\"-nHz\"": "",        
+        "attribute values›<prosody>›pitch=\"+nst\"": "",        
+        "attribute values›<prosody>›pitch=\"-nst\"": "",        
+        "attribute values›<prosody>›pitch=\"+n%\"": "",        
+        "attribute values›<prosody>›pitch=\"-n%\"": "",  
+        "attribute values›<prosody>›pitch=\"x-low\"": "",        
+        "attribute values›<prosody>›pitch=\"low\"": "",        
+        "attribute values›<prosody>›pitch=\"medium\"": "",        
+        "attribute values›<prosody>›pitch=\"high\"": "",        
+        "attribute values›<prosody>›pitch=\"x-high\"": "",        
+        "attribute values›<prosody>›pitch=\"default\"": "",        
+
+        "attribute values›<prosody>›range=\"nHz\"": "",        
+        "attribute values›<prosody>›range=\"+nHz\"": "",        
+        "attribute values›<prosody>›range=\"-nHz\"": "",        
+        "attribute values›<prosody>›range=\"+nst\"": "",        
+        "attribute values›<prosody>›range=\"-nst\"": "",        
+        "attribute values›<prosody>›range=\"x-low\"": "",        
+        "attribute values›<prosody>›range=\"low\"": "",        
+        "attribute values›<prosody>›range=\"medium\"": "",        
+        "attribute values›<prosody>›range=\"high\"": "",        
+        "attribute values›<prosody>›range=\"x-high\"": "",        
+        "attribute values›<prosody>›range=\"default\"": "",  
+
+        "attribute values›<prosody>›rate=\"+n%\"": "",        
+        "attribute values›<prosody>›rate=\"-n%\"": "",        
+        "attribute values›<prosody>›rate=\"x-slow\"": "",        
+        "attribute values›<prosody>›rate=\"slow\"": "",        
+        "attribute values›<prosody>›rate=\"medium\"": "",        
+        "attribute values›<prosody>›rate=\"fast\"": "",        
+        "attribute values›<prosody>›rate=\"x-fast\"": "",        
+        "attribute values›<prosody>›rate=\"default\"": "",                                         
+
+        "attribute values›<prosody>›volume=\"n.n\"": "",        
+        "attribute values›<prosody>›volume=\"+n.n\"": "",        
+        "attribute values›<prosody>›volume=\"-n.n\"": "",        
+        "attribute values›<prosody>›volume=\"silent\"": "",        
+        "attribute values›<prosody>›volume=\"x-soft\"": "",        
+        "attribute values›<prosody>›volume=\"soft\"": "",        
+        "attribute values›<prosody>›volume=\"medium\"": "",        
+        "attribute values›<prosody>›volume=\"loud\"": "",        
+        "attribute values›<prosody>›volume=\"x-loud\"": "",        
+        "attribute values›<prosody>›volume=\"default\"": ""
+        
+    },
+    "SSML_1.1": {
+        "summary›supported elements›<w>": "",
+        "summary›supported elements›<lang>": "",
+        "summary›supported elements›<token>": "",
+        "summary›supported elements›<lookup>": "",        
+
+        "elements›<lang>›xml:lang (required)": "",
+        "elements›<lang>›onlangfailure (optional)": "",
+
+        "elements›<lookup>›ref (required)": "",
+
+        "elements›<speak>›version=\"1.1\" (required)": "",
+        "elements›<speak>›startmark (optional)": "",
+        "elements›<speak>›endmark (optional)": "",
+        "elements›<speak>›onlangfailure (optional)": "",
+
+        "elements›<token>›role (optional)": "",
+        "elements›<token>›xml:id (optional)": "",
+        "elements›<token>›xml:lang (optional)": "",
+        "elements›<token>›onlangfailure (optional)": "",
+
+        "elements›<w> (word)›role (optional)": "",
+        "elements›<w> (word)›xml:id (optional)": "",
+        "elements›<w> (word)›xml:lang (optional)": "",
+        "elements›<w> (word)›onlangfailure (optional)": "",
+
+        "attribute values›<prosody>›rate=\"n%\"": "",
+        "attribute values›<prosody>›volume=\"+ndB\"": "",        
+        "attribute values›<prosody>›volume=\"-ndB\"": ""        
+
+    },    
+    "COMMON": {
+
+        "attribute values›<phoneme>›alphabet=\"ibm\"": "",
+        "attribute values›<phoneme>›alphabet=\"sapi\"": "",
+        "attribute values›<phoneme>›alphabet=\"ups\"": "",
+        "attribute values›<phoneme>›alphabet=\"x-sampa\"": "",
+
+        "attribute values›<say-as>›interpret-as=\"address\"": "",
+        "attribute values›<say-as>›interpret-as=\"cardinal\"": "",
+        "attribute values›<say-as>›interpret-as=\"characters\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"d\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"dm\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"dmy\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"m\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"md\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"mdy\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"my\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"y\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ydm\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ym\"": "",
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ymd\"": "",
+        "attribute values›<say-as>›interpret-as=\"digits\"": "",
+        "attribute values›<say-as>›interpret-as=\"expletive\"": "",
+        "attribute values›<say-as>›interpret-as=\"fraction\"": "",
+        "attribute values›<say-as>›interpret-as=\"interjection\"": "",
+        "attribute values›<say-as>›interpret-as=\"letters\"": "",
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"cardinal\"": "",
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"ordinal\"": "",
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"telephone\"": "",
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"telephone\" detail=\"punctuation\"": "",
+        "attribute values›<say-as>›interpret-as=\"number\"": "",
+        "attribute values›<say-as>›interpret-as=\"ordinal\"": "",
+        "attribute values›<say-as>›interpret-as=\"spell-out\"": "",
+        "attribute values›<say-as>›interpret-as=\"telephone\"": "",
+        "attribute values›<say-as>›interpret-as=\"time\"": "",
+        "attribute values›<say-as>›interpret-as=\"unit\"": "",
+        "attribute values›<say-as>›interpret-as=\"vxml:boolean\"": "",
+        "attribute values›<say-as>›interpret-as=\"vxml:currency\"": "",
+        "attribute values›<say-as>›interpret-as=\"vxml:date\"": "",
+        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": ""
+    },   
+    "AMZ-EXT": {
+        "summary›supported elements›<amazon:effect>": "<speak>\nI want to tell you a secret.\n<amazon:effect name=\"whispered\">I am not a real human.</amazon:effect>.\nCan you believe it?\n</speak>",
+
+        "attribute values›<w>›role=\"amazon:VB\"": "",        
+        "attribute values›<w>›role=\"amazon:VBD\"": "",        
+        "attribute values›<w>›role=\"amazon:NN\"": "",        
+        "attribute values›<w>›role=\"amazon:SENSE_1\"": ""        
+
+    },
+    "IBM-EXT": {
+    }                
+}

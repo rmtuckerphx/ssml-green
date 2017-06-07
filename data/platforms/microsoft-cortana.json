@@ -22,5 +22,9 @@
         "summary›supported elements›<lang>": false,
         "summary›supported elements›<token>": false,
         "summary›supported elements›<lookup>": false  
+    },
+    "COMMON": {
+        "attribute values›<phoneme>›alphabet=\"sapi\"": true,                     
+        "attribute values›<phoneme>›alphabet=\"ups\"": true                     
     }    
 }
