@@ -67,8 +67,6 @@
         "elements›<voice>›name (optional)": "",
         "elements›<voice>›variant (optional)": "",
 
-        "attribute values›<phoneme>›alphabet=\"ipa\"": "",
-
         "attribute values›<emphasis>›level=\"strong\"": "",        
         "attribute values›<emphasis>›level=\"moderate\" (default)": "",        
         "attribute values›<emphasis>›level=\"none\"": "",        
@@ -166,6 +164,7 @@
     },    
     "COMMON": {
 
+        "attribute values›<phoneme>›alphabet=\"ipa\"": "",
         "attribute values›<phoneme>›alphabet=\"ibm\"": "",
         "attribute values›<phoneme>›alphabet=\"sapi\"": "",
         "attribute values›<phoneme>›alphabet=\"ups\"": "",

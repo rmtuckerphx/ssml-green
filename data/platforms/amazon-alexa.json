@@ -63,11 +63,9 @@
 
         "elements›<voice>›xml:lang (required)": false,
         "elements›<voice>›gender (optional)": false,
-        "elements›<voice>age (optional)": false,
-        "elements›<voice>variant (optional)": false,
+        "elements›<voice>›age (optional)": false,
+        "elements›<voice>›variant (optional)": false,
         "elements›<voice>›name (optional)": false,
-
-        "attribute values›<phoneme>›alphabet=\"ipa\"": true,
 
         "attribute values›<emphasis>›level=\"strong\"": true,        
         "attribute values›<emphasis>›level=\"moderate\" (default)": true,        
@@ -187,6 +185,7 @@
         "attribute values›<say-as>›interpret-as=\"interjection\"": true,
         "attribute values›<say-as>›interpret-as=\"expletive\"": true,
         
+        "attribute values›<phoneme>›alphabet=\"ipa\"": true,
         "attribute values›<phoneme>›alphabet=\"x-sampa\"": true                     
     },           
     "AMZ-EXT": {
