@@ -4,7 +4,7 @@
         "ssmlLink": "https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference"
     },
     "google-home": {
-        "name": "Google Home",
+        "name": "Google Assistant",
         "ssmlLink": "https://developers.google.com/actions/reference/ssml"
     },
     "microsoft-cortana": {

@@ -18,6 +18,12 @@
         "summary›supported elements›<voice>": "<speak>\n  <voice gender=\"female\">Mary had a little lamb,<\/voice>\n\n  <!-- now request a different female child's voice -->\n  <voice gender=\"female\" variant=\"2\">\n    Its fleece was white as snow.\n  <\/voice>\n\n  <!-- processor-specific voice selection -->\n  <voice name=\"Mike\">I want to be like Mike.<\/voice>\n<\/speak>",
 
         "elements›<audio>›src (required)": "",
+        "elements›<audio>›clipBegin": "",
+        "elements›<audio>›clipEnd": "",
+        "elements›<audio>›speed": "",
+        "elements›<audio>›soundLevel": "",
+        "elements›<audio>›repeatCount": "",
+        "elements›<audio>›repeatDur": "",
 
         "elements›<break>›strength (optional)": "",
         "elements›<break>›time (optional)": "",
@@ -203,8 +209,20 @@
         "attribute values›<say-as>›interpret-as=\"vxml:boolean\"": "",
         "attribute values›<say-as>›interpret-as=\"vxml:currency\"": "",
         "attribute values›<say-as>›interpret-as=\"vxml:date\"": "",
-        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": ""
-    },   
+        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": "",
+
+        "tags›<seq>": "<seq>\n\t<media begin='0.5s'>\n\t\t<speak>Who invented the Internet?</speak>\n\t</media>\n\t<media begin='2.0s'>\n\t\t<speak>The Internet was invented by cats.</speak>\n\t</media>\n</seq>",
+        "tags›<par>": "<par>\n\t<media begin='0.5s'>\n\t\t<speak>Who invented the Internet?</speak>\n\t</media>\n\t<media>\n\t\t<audio src='https://actions.google.com/.../beep_boop.ogg'/>\n\t</media>\n</par>",
+        "tags›<media>": "<media repeatCount='3' soundLevel='+2.28dB' fadeInDur='2s' fadeOutDur='0.2s'>\n\t<audio src='https://actions.google.com/.../cat_purr_close.ogg'/>\n</media>",
+        "tags›<media>›xml:id": "",
+        "tags›<media>›begin": "",
+        "tags›<media>›end": "",
+        "tags›<media>›repeatCount": "",
+        "tags›<media>›repeatDur": "",
+        "tags›<media>›soundLevel": "",
+        "tags›<media>›fadeInDur": "",
+        "tags›<media>›fadeOutDur": ""
+    },
     "AMZ-EXT": {
         "summary›supported elements›<amazon:effect>": "<speak>\nI want to tell you a secret.\n<amazon:effect name=\"whispered\">I am not a real human.</amazon:effect>.\nCan you believe it?\n</speak>",
 
@@ -215,5 +233,5 @@
 
     },
     "IBM-EXT": {
-    }                
+    }
 }
