@@ -8,6 +8,7 @@ html(lang="en")
     link(href='favico.ico',rel='shortcut icon')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(rel="stylesheet", href="style.css")
+    //- link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons")
 body
   nav.navbar.navbar-inverse.navbar-fixed-top
     div.container-fluid
@@ -21,9 +22,10 @@ body
           div.row
             each header, key in headers
               div.col-md-1.platform-header(class=`ssml-${key}`)
-                div.platform-header-text
-                  a(href=`${header.ssmlLink}`, target="_blank", title="Go to SSML doc")
-                    != header.name.replace(/\W/g, '<br/>')
+                if (header.name)
+                  div.platform-header-text
+                    a(href=`${header.ssmlLink}`, target="_blank", title="Go to SSML doc", class="external")
+                      != header.name.replace(/\W/g, '<br/>')
 
         div.col-md-1
           div#more.pull-right
@@ -36,49 +38,60 @@ body
     div.panel.panel-default
       div.panel-body.version-header
         span.glyphicon.glyphicon-bullhorn.version-icon
-        a(href=`${path}`, target="_blank", title="Go to SSML doc")
+        if (path)
+          a(href=`${path}`, target="_blank", title="Go to SSML doc", class="external-lg")
+            | #{name}
+            span.panel-description #{description}
+        else
           | #{name}
           span.panel-description #{description}
+
     div.container-fluid
       each obj1, category in testers && testers[version] ? testers[version] : {}
         - var category2 = version+'-'+category.replace(/\W/g, '-')
         div.row
-          div.col-md-12.section1
+          div.col-md-12.section1.permalink
             .hash(id=category2)
             a(href='#'+category2)=category
         each obj2, subcategory in obj1
-          - var subcategory2 = [category2,subcategory.replace(/\W/g, '-')].join('-')  
+          - var subcategory2 = [category2,subcategory.replace(/\W/g, '-')].join('-')
           div.row
-            div.col-md-12.section2
+            div.col-md-12.section2.permalink
               .hash(id=subcategory2)
               a(href='#'+subcategory2)=subcategory
           each obj3, subsubcategory in obj2
             - var subsubcategory2 = [subcategory2,subsubcategory.replace(/\W/g, '-')].join('-')
             div.row
-              div.col-md-4.check-value
-                .hash(id=subsubcategory2)               
+              div.col-md-4.check-value.permalink
+                .hash(id=subsubcategory2)
                 a(href='#'+subsubcategory2)=subsubcategory
-                span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="hover", data-placement="right", data-content=`${obj3.code}`)
+                if (obj3.code != '<pre class"code"></pre>')
+                  span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="click", data-placement="right", data-content=`${obj3.code}`)
               div.col-md-7
-                div.row              
+                div.row
                   each platformName in Object.keys(headers)
                     div.col-md-1
                       - var result = results(platformName, version, obj3.path)
                       div.check-value-text(class=`${result.classes}`, title=`${result.tip}`)
                         |  #{result.text}
     div.spacer
-    
+
   each group, key in groups
     +versionGroup(group.name, key, group.description, group.path)
   //- +versionGroup('SSML 1.0', 'SSML_1.0', '(W3C Recommendation 7 September 2004)', 'https://www.w3.org/TR/speech-synthesis/')
   //- +versionGroup('SSML 1.1', '(W3C Recommendation 7 September 2010)', 'https://www.w3.org/TR/speech-synthesis11/')
   //- +versionGroup('Amazon Extensions', '', 'https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect')
-  
+  p.last-updated Last updated: #{new Date()}
+
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js")
 
   script.
     $(function () {
+      var Anchor1 = new AnchorJS();
+      Anchor1.add('.permalink');
+
       $('[data-toggle="popover"]').popover()
     })
 

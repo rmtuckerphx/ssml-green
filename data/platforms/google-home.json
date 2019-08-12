@@ -18,12 +18,6 @@
         "summary›supported elements›<voice>": false,
 
         "elements›<audio>›src (required)": true,
-        "elements›<audio>›clipBegin": true,
-        "elements›<audio>›clipEnd": true,
-        "elements›<audio>›speed": true,
-        "elements›<audio>›soundLevel": true,
-        "elements›<audio>›repeatCount": true,
-        "elements›<audio>›repeatDur": true,
 
         "elements›<break>›strength (optional)": true,
         "elements›<break>›time (optional)": true,
@@ -103,7 +97,14 @@
         "summary›supported elements›<w>": false,
         "summary›supported elements›<lang>": false,
         "summary›supported elements›<token>": false,
-        "summary›supported elements›<lookup>": false
+        "summary›supported elements›<lookup>": false,
+
+        "elements›<audio>›clipBegin (optional)": true,
+        "elements›<audio>›clipEnd (optional)": true,
+        "elements›<audio>›speed (optional)": true,
+        "elements›<audio>›soundLevel (optional)": true,
+        "elements›<audio>›repeatCount (optional)": true,
+        "elements›<audio>›repeatDur (optional)": true
     },
     "COMMON": {
         "attribute values›<say-as>›interpret-as=\"address\"": false,
@@ -138,18 +139,20 @@
         "attribute values›<say-as>›interpret-as=\"vxml:boolean\"": false,
         "attribute values›<say-as>›interpret-as=\"vxml:currency\"": false,
         "attribute values›<say-as>›interpret-as=\"vxml:date\"": false,
-        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": false,
+        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": false
+    },
+    "GOOG-EXT": {
+        "summary›supported elements›<seq>": true,
+        "summary›supported elements›<par>": true,
+        "summary›supported elements›<media>": true,
 
-        "tags›<seq>": true,
-        "tags›<par>": true,
-        "tags›<media>": true,
-        "tags›<media>›xml:id": true,
-        "tags›<media>›begin": true,
-        "tags›<media>›end": true,
-        "tags›<media>›repeatCount": true,
-        "tags›<media>›repeatDur": true,
-        "tags›<media>›soundLevel": true,
-        "tags›<media>›fadeInDur": true,
-        "tags›<media>›fadeOutDur": true
+        "elements›<media>›xml:id (optional)": true,
+        "elements›<media>›begin (optional)": true,
+        "elements›<media>›end (optional)": true,
+        "elements›<media>›repeatCount (optional)": true,
+        "elements›<media>›repeatDur (optional)": true,
+        "elements›<media>›soundLevel (optional)": true,
+        "elements›<media>›fadeInDur (optional)": true,
+        "elements›<media>›fadeOutDur (optional)": true
     }
 }
