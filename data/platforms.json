@@ -1,10 +1,10 @@
 {
     "amazon-alexa": {
         "name": "Amazon Alexa",
-        "ssmlLink": "https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference"
+        "ssmlLink": "https://developer.amazon.com/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html"
     },
     "google-home": {
-        "name": "Google Home",
+        "name": "Google Assistant",
         "ssmlLink": "https://developers.google.com/actions/reference/ssml"
     },
     "microsoft-cortana": {
@@ -14,13 +14,13 @@
     "blank": {
         "name": "",
         "ssmlLink": ""
-    },    
+    },
     "amazon-polly": {
         "name": "Amazon Polly",
         "ssmlLink": "http://docs.aws.amazon.com/polly/latest/dg/supported-ssml.html"
-    },    
+    },
     "ibm-watson": {
-        "name": "IBM Watson",
-        "ssmlLink": "https://www.ibm.com/watson/developercloud/doc/text-to-speech/SSML.html"
+        "name": "IBM TTS",
+        "ssmlLink": "https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-gettingStarted"
     }
 }

@@ -17,6 +17,7 @@
     "pug": "^2.0.0-rc.2"
   },
   "scripts": {
+    "build": "node build.js",
     "test": "npm run lint",
     "lint": "standard"
   },
