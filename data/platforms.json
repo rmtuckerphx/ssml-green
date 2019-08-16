@@ -17,10 +17,10 @@
     },
     "amazon-polly": {
         "name": "Amazon Polly",
-        "ssmlLink": "http://docs.aws.amazon.com/polly/latest/dg/supported-ssml.html"
+        "ssmlLink": "https://docs.aws.amazon.com/polly/latest/dg/supportedtags.html"
     },
     "ibm-watson": {
         "name": "IBM TTS",
-        "ssmlLink": "https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-gettingStarted"
+        "ssmlLink": "https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-elements"
     }
 }
