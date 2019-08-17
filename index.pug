@@ -73,7 +73,10 @@ body
                     div.col-md-1
                       - var result = results(platformName, version, obj3.path)
                       div.check-value-text(class=`${result.classes}`, title=`${result.tip}`)
-                        |  #{result.text}
+                        if result.footnote > 0
+                          a(href='#footnote'+result.footnote) [#{result.footnote}]
+                        else
+                          |  #{result.text}
     div.spacer
 
   each group, key in groups
@@ -81,6 +84,14 @@ body
   //- +versionGroup('SSML 1.0', 'SSML_1.0', '(W3C Recommendation 7 September 2004)', 'https://www.w3.org/TR/speech-synthesis/')
   //- +versionGroup('SSML 1.1', '(W3C Recommendation 7 September 2010)', 'https://www.w3.org/TR/speech-synthesis11/')
   //- +versionGroup('Amazon Extensions', '', 'https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference#amazon-effect')
+
+  div.footnotes Notes:
+    ol
+      - var noteIndex = 0
+      each footnote in footnotes
+        - noteIndex++
+        li(id=`footnote${noteIndex}`) !{footnote}
+
   p.last-updated Last updated: #{new Date()}
 
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js")
