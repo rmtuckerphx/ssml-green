@@ -229,12 +229,12 @@
 }
 
 .ssml-footnote {
-  background-color: #0000ee;
-  color: #00AEEF;
+  background-color: gold;
+  color: #666;
 }
 
 .ssml-footnote a {
-  color: #00AEEF;
+  color: #666;
 }
 
 .ssml-other {
