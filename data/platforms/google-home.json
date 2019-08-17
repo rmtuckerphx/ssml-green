@@ -15,7 +15,10 @@
         "summary›supported elements›<lexicon>": false,
         "summary›supported elements›<meta>": false,
         "summary›supported elements›<metadata>": false,
-        "summary›supported elements›<voice>": false,
+        "summary›supported elements›<voice>": 1,
+
+        "elements›<voice>›gender (optional)": 1,
+        "elements›<voice>›variant (optional)": 1,
 
         "elements›<audio>›src (required)": true,
 
