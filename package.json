@@ -22,6 +22,7 @@
     "lint": "standard"
   },
   "devDependencies": {
-    "standard": "^7.1.2"
+    "standard": "^7.1.2",
+    "eslint": ">=4.18.2"
   }
 }
