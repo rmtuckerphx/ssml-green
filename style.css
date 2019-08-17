@@ -163,6 +163,11 @@
   margin-right: 16px;
 }
 
+.footnotes {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
 .panel-description, .last-updated {
   font-size: 14px;
   margin-left: 10px;
@@ -221,6 +226,15 @@
 .ssml-no {
   background-color: #dd0000;
   color: #fff;
+}
+
+.ssml-footnote {
+  background-color: #0000ee;
+  color: #00AEEF;
+}
+
+.ssml-footnote a {
+  color: #00AEEF;
 }
 
 .ssml-other {
