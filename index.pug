@@ -8,7 +8,6 @@ html(lang="en")
     link(href='favico.ico',rel='shortcut icon')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
     link(rel="stylesheet", href="style.css")
-    //- link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons")
 body
   nav.navbar.navbar-inverse.navbar-fixed-top
     div.container-fluid
@@ -65,7 +64,7 @@ body
               div.col-md-4.check-value.permalink
                 .hash(id=subsubcategory2)
                 a(href='#'+subsubcategory2)=subsubcategory
-                if (obj3.code != '<pre class"code"></pre>')
+                if (obj3.code)
                   span.glyphicon.glyphicon-exclamation-sign.pull-right.info-icon(aria-hidden="true", data-container="body", data-html="true", data-toggle="popover", data-trigger="click", data-placement="right", data-content=`${obj3.code}`)
               div.col-md-7
                 div.row
@@ -93,6 +92,7 @@ body
         li(id=`footnote${noteIndex}`) !{footnote}
 
   p.last-updated Last updated: #{new Date()}
+  p.last-updated Copyright (c) 2019 Mark Tucker
 
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js")
   script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")

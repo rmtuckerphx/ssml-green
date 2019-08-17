@@ -15,16 +15,189 @@
         "summary›supported elements›<lexicon>": false,
         "summary›supported elements›<meta>": false,
         "summary›supported elements›<metadata>": false,
-        "summary›supported elements›<voice>": false 
+        "summary›supported elements›<voice>": false,
+
+        "elements›<audio>›src (required)": false,
+
+        "elements›<break>›strength (optional)": true,
+        "elements›<break>›time (optional)": true,
+
+        "elements›<desc>›xml:lang (optional)": false,
+
+        "elements›<emphasis>›level (optional)": false,
+
+        "elements›<lexicon>›uri (required)": false,
+        "elements›<lexicon>›type (optional)": false,
+
+        "elements›<mark>›name (required)": true,
+
+        "elements›<meta>›content (required)": false,
+        "elements›<meta>›http-equiv (required)": false,
+        "elements›<meta>›name=\"seeAlso\" (required)": false,
+
+        "elements›<p> (paragraph)›xml:lang (optional)": false,
+
+        "elements›<phoneme>›alphabet (optional)": true,
+        "elements›<phoneme>›ph (required)": true,
+
+        "elements›<prosody>›contour (optional)": false,
+        "elements›<prosody>›duration (optional)": false,
+        "elements›<prosody>›pitch (optional)": true,
+        "elements›<prosody>›range (optional)": false,
+        "elements›<prosody>›rate (optional)": true,
+        "elements›<prosody>›volume (optional)": true,
+
+        "elements›<s> (sentence)›xml:lang (optional)": false,
+
+        "elements›<say-as>›interpret-as (required)": true,
+        "elements›<say-as>›format (optional)": true,
+        "elements›<say-as>›detail (optional)": true,
+
+        "elements›<speak>›fragment": true,
+        "elements›<speak>›with namespaces": false,
+        "elements›<speak>›version=\"1.0\" (required)": true,
+        "elements›<speak>›xml:base (optional)": false,
+        "elements›<speak>›xml:lang (required)": false,
+
+        "elements›<sub>›alias (required)": true,
+
+        "elements›<voice>›xml:lang (required)": false,
+        "elements›<voice>›age (optional)": false,
+        "elements›<voice>›gender (optional)": false,
+        "elements›<voice>›name (optional)": false,
+        "elements›<voice>›variant (optional)": false,
+
+        "attribute values›<emphasis>›level=\"strong\"": false,        
+        "attribute values›<emphasis>›level=\"moderate\" (default)": false,        
+        "attribute values›<emphasis>›level=\"none\"": false,        
+        "attribute values›<emphasis>›level=\"reduced\"": false,
+
+        "attribute values›<break>›strength=\"none\"": true,        
+        "attribute values›<break>›strength=\"x-weak\"": true,        
+        "attribute values›<break>›strength=\"weak\"": true,        
+        "attribute values›<break>›strength=\"medium\" (default)": true,        
+        "attribute values›<break>›strength=\"strong\"": true,        
+        "attribute values›<break>›strength=\"x-strong\"": true,
+
+        "attribute values›<prosody>›contour=\"(n%, nHz), ...\"": false,         
+        "attribute values›<prosody>›contour=\"(n%, +nHz), ...\"": false,         
+        "attribute values›<prosody>›contour=\"(n%, -nHz), ...\"": false,         
+        "attribute values›<prosody>›contour=\"(n%, label), ...\"": false,
+
+        "attribute values›<prosody>›pitch=\"nHz\"": true,        
+        "attribute values›<prosody>›pitch=\"+nHz\"": true,        
+        "attribute values›<prosody>›pitch=\"-nHz\"": true,        
+        "attribute values›<prosody>›pitch=\"+nst\"": true,        
+        "attribute values›<prosody>›pitch=\"-nst\"": true,        
+        "attribute values›<prosody>›pitch=\"+n%\"": true,        
+        "attribute values›<prosody>›pitch=\"-n%\"": true,  
+        "attribute values›<prosody>›pitch=\"x-low\"": true,        
+        "attribute values›<prosody>›pitch=\"low\"": true,        
+        "attribute values›<prosody>›pitch=\"medium\"": true,        
+        "attribute values›<prosody>›pitch=\"high\"": true,        
+        "attribute values›<prosody>›pitch=\"x-high\"": true,        
+        "attribute values›<prosody>›pitch=\"default\"": true,        
+
+        "attribute values›<prosody>›range=\"nHz\"": false,        
+        "attribute values›<prosody>›range=\"+nHz\"": false,        
+        "attribute values›<prosody>›range=\"-nHz\"": false,        
+        "attribute values›<prosody>›range=\"+nst\"": false,        
+        "attribute values›<prosody>›range=\"-nst\"": false,        
+        "attribute values›<prosody>›range=\"x-low\"": false,        
+        "attribute values›<prosody>›range=\"low\"": false,        
+        "attribute values›<prosody>›range=\"medium\"": false,        
+        "attribute values›<prosody>›range=\"high\"": false,        
+        "attribute values›<prosody>›range=\"x-high\"": false,        
+        "attribute values›<prosody>›range=\"default\"": false,  
+
+        "attribute values›<prosody>›rate=\"+n%\"": true,        
+        "attribute values›<prosody>›rate=\"-n%\"": true,        
+        "attribute values›<prosody>›rate=\"x-slow\"": true,        
+        "attribute values›<prosody>›rate=\"slow\"": true,        
+        "attribute values›<prosody>›rate=\"medium\"": true,        
+        "attribute values›<prosody>›rate=\"fast\"": true,        
+        "attribute values›<prosody>›rate=\"x-fast\"": true,        
+        "attribute values›<prosody>›rate=\"default\"": true,                                         
+
+        "attribute values›<prosody>›volume=\"n.n\"": true,        
+        "attribute values›<prosody>›volume=\"+n.n\"": false,        
+        "attribute values›<prosody>›volume=\"-n.n\"": false,        
+        "attribute values›<prosody>›volume=\"silent\"": false,        
+        "attribute values›<prosody>›volume=\"x-soft\"": true,        
+        "attribute values›<prosody>›volume=\"soft\"": true,        
+        "attribute values›<prosody>›volume=\"medium\"": true,        
+        "attribute values›<prosody>›volume=\"loud\"": true,        
+        "attribute values›<prosody>›volume=\"x-loud\"": true,        
+        "attribute values›<prosody>›volume=\"default\"": true
+         
     },
     "SSML_1.1": {
         "summary›supported elements›<w>": false,
         "summary›supported elements›<lang>": false,
         "summary›supported elements›<token>": false,
-        "summary›supported elements›<lookup>": false  
+        "summary›supported elements›<lookup>": false,
+
+        "elements›<lang>›xml:lang (required)": false,
+        "elements›<lang>›onlangfailure (optional)": false,
+
+        "elements›<lookup>›ref (required)": false,
+
+        "elements›<speak>›version=\"1.1\" (required)": false,
+        "elements›<speak>›startmark (optional)": false,
+        "elements›<speak>›endmark (optional)": false,
+        "elements›<speak>›onlangfailure (optional)": false,
+
+        "elements›<token>›role (optional)": false,
+        "elements›<token>›xml:id (optional)": false,
+        "elements›<token>›xml:lang (optional)": false,
+        "elements›<token>›onlangfailure (optional)": false,
+
+        "elements›<w> (word)›role (optional)": false,
+        "elements›<w> (word)›xml:id (optional)": false,
+        "elements›<w> (word)›xml:lang (optional)": false,
+        "elements›<w> (word)›onlangfailure (optional)": false,
+
+        "attribute values›<prosody>›rate=\"n%\"": false,
+        "attribute values›<prosody>›volume=\"+ndB\"": false,       
+        "attribute values›<prosody>›volume=\"-ndB\"": false                  
     },
     "COMMON": {
-        "attribute values›<phoneme>›alphabet=\"ibm\"": true                     
+        "attribute values›<phoneme>›alphabet=\"ipa\"": true,
+        "attribute values›<phoneme>›alphabet=\"ibm\"": true,
+
+        "attribute values›<say-as>›interpret-as=\"address\"": null,
+        "attribute values›<say-as>›interpret-as=\"cardinal\"": true,
+        "attribute values›<say-as>›interpret-as=\"characters\"": null,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"d\"": null,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"dm\"": null,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"dmy\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"m\"": null,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"md\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"mdy\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"my\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"y\"": null,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ydm\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ym\"": true,
+        "attribute values›<say-as>›interpret-as=\"date\" format=\"ymd\"": true,
+        "attribute values›<say-as>›interpret-as=\"digits\"": true,
+        "attribute values›<say-as>›interpret-as=\"expletive\"": null,
+        "attribute values›<say-as>›interpret-as=\"fraction\"": null,
+        "attribute values›<say-as>›interpret-as=\"interjection\"": null,
+        "attribute values›<say-as>›interpret-as=\"letters\"": true,
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"cardinal\"": true,
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"ordinal\"": true,
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"telephone\"": true,
+        "attribute values›<say-as>›interpret-as=\"number\" format=\"telephone\" detail=\"punctuation\"": true,
+        "attribute values›<say-as>›interpret-as=\"number\"": true,
+        "attribute values›<say-as>›interpret-as=\"ordinal\"": true,
+        "attribute values›<say-as>›interpret-as=\"spell-out\"": null,
+        "attribute values›<say-as>›interpret-as=\"telephone\"": null,
+        "attribute values›<say-as>›interpret-as=\"time\"": null,
+        "attribute values›<say-as>›interpret-as=\"unit\"": null,
+        "attribute values›<say-as>›interpret-as=\"vxml:boolean\"": true,
+        "attribute values›<say-as>›interpret-as=\"vxml:currency\"": true,
+        "attribute values›<say-as>›interpret-as=\"vxml:date\"": true,
+        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": true                                 
     }
       
 }
