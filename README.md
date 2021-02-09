@@ -5,6 +5,7 @@ This project allows voice designers and developers to understand how SSML is imp
 - Microsoft Cortana
 - Amazon Polly
 - IBM Watson
+- Microsoft Azure
 
 It helps answer the questions:
 - How well does a service match the SSML standards?
