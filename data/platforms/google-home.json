@@ -27,7 +27,7 @@
         "elements›<break>›strength (optional)": true,
         "elements›<break>›time (optional)": true,
 
-        "elements›<empahsis>›level (optional)": true,
+        "elements›<emphasis>›level (optional)": true,
 
         "elements›<p> (paragraph)›xml:lang (optional)": false,
 
