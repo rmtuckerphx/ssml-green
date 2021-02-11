@@ -22,5 +22,9 @@
     "ibm-watson": {
         "name": "IBM TTS",
         "ssmlLink": "https://cloud.ibm.com/docs/services/text-to-speech?topic=text-to-speech-elements"
+    },
+    "microsoft-azure": {
+        "name": "Microsoft Azure",
+        "ssmlLink": "https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup"
     }
 }

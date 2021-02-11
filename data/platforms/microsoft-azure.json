@@ -12,12 +12,12 @@
         "summary›supported elements›<audio>": true,
         "summary›supported elements›<desc>": false,
         "summary›supported elements›<emphasis>": false,
-        "summary›supported elements›<lexicon>": false,
+        "summary›supported elements›<lexicon>": true,
         "summary›supported elements›<meta>": false,
         "summary›supported elements›<metadata>": false,
-        "summary›supported elements›<voice>": false,
+        "summary›supported elements›<voice>": true,
 
-        "elements›<voice>›gender (optional)": false,
+        "elements›<voice>›gender (optional)": true,
         "elements›<voice>›variant (optional)": false,
 
         "elements›<audio>›src (required)": true,
