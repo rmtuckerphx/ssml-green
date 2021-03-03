@@ -14,7 +14,7 @@
   "dependencies": {
     "get-then": "^1.0.0",
     "object.assign": "^3.0.1",
-    "pug": "^2.0.0-rc.2"
+    "pug": "^3.0.1"
   },
   "scripts": {
     "build": "node build.js",
