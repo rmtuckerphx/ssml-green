@@ -4,7 +4,7 @@
         "summary›supported elements›<p>": true,
         "summary›supported elements›<s>": true,
         "summary›supported elements›<say-as>": true,
-        "summary›supported elements›<phoneme>": false,
+        "summary›supported elements›<phoneme>": true,
         "summary›supported elements›<prosody>": true,
         "summary›supported elements›<sub>": true,
         "summary›supported elements›<break>": true,
@@ -15,10 +15,7 @@
         "summary›supported elements›<lexicon>": false,
         "summary›supported elements›<meta>": false,
         "summary›supported elements›<metadata>": false,
-        "summary›supported elements›<voice>": 1,
-
-        "elements›<voice>›gender (optional)": 1,
-        "elements›<voice>›variant (optional)": 1,
+        "summary›supported elements›<voice>": true,
 
         "elements›<audio>›src (required)": true,
 
@@ -30,6 +27,16 @@
         "elements›<emphasis>›level (optional)": true,
 
         "elements›<p> (paragraph)›xml:lang (optional)": false,
+
+        "elements›<voice>›gender (optional)": true,
+        "elements›<voice>›age (optional)": false,
+        "elements›<voice>›variant (optional)": true,
+        "elements›<voice>›name (optional)": true,
+        "elements›<voice>›required (optional)": true,
+        "elements›<voice>›ordering (optional)": true,
+
+        "elements›<phoneme>›ph (required)": true,
+        "elements›<phoneme>›alphabet (optional)": true,
 
         "elements›<prosody>›contour (optional)": false,
         "elements›<prosody>›duration (optional)": false,
@@ -51,6 +58,8 @@
         "elements›<speak>›xml:lang (required)": false,
 
         "elements›<sub>›alias (required)": true,
+
+        "attribute values›<phoneme>›alphabet=\"ipa\"": true,
 
         "attribute values›<emphasis>›level=\"strong\"": true,
         "attribute values›<emphasis>›level=\"moderate\" (default)": true,
@@ -100,7 +109,7 @@
     },
     "SSML_1.1": {
         "summary›supported elements›<w>": false,
-        "summary›supported elements›<lang>": false,
+        "summary›supported elements›<lang>": true,
         "summary›supported elements›<token>": false,
         "summary›supported elements›<lookup>": false,
 
@@ -109,7 +118,10 @@
         "elements›<audio>›speed (optional)": true,
         "elements›<audio>›soundLevel (optional)": true,
         "elements›<audio>›repeatCount (optional)": true,
-        "elements›<audio>›repeatDur (optional)": true
+        "elements›<audio>›repeatDur (optional)": true,
+
+        "elements›<lang>›xml:lang (required)": true,
+        "elements›<lang>›onlangfailure (optional)": false
     },
     "COMMON": {
         "attribute values›<say-as>›interpret-as=\"address\"": false,
@@ -127,6 +139,10 @@
         "attribute values›<say-as>›interpret-as=\"date\" format=\"ym\"": true,
         "attribute values›<say-as>›interpret-as=\"date\" format=\"ymd\"": true,
         "attribute values›<say-as>›interpret-as=\"digits\"": false,
+        "attribute values›<say-as>›interpret-as=\"duration\" format=\"h\"": true,
+        "attribute values›<say-as>›interpret-as=\"duration\" format=\"m\"": true,
+        "attribute values›<say-as>›interpret-as=\"duration\" format=\"s\"": true,
+        "attribute values›<say-as>›interpret-as=\"duration\" format=\"ms\"": true,
         "attribute values›<say-as>›interpret-as=\"expletive\"": true,
         "attribute values›<say-as>›interpret-as=\"fraction\"": true,
         "attribute values›<say-as>›interpret-as=\"interjection\"": false,
@@ -144,7 +160,12 @@
         "attribute values›<say-as>›interpret-as=\"vxml:boolean\"": false,
         "attribute values›<say-as>›interpret-as=\"vxml:currency\"": false,
         "attribute values›<say-as>›interpret-as=\"vxml:date\"": false,
-        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": false
+        "attribute values›<say-as>›interpret-as=\"vxml:phone\"": false,
+
+        "attribute values›<phoneme>›alphabet=\"x-sampa\"": true,
+        "attribute values›<phoneme>›alphabet=\"pinyin\"": true,
+        "attribute values›<phoneme>›alphabet=\"jyutping\"": true
+
     },
     "GOOG-EXT": {
         "summary›supported elements›<seq>": true,
@@ -158,6 +179,8 @@
         "elements›<media>›repeatDur (optional)": true,
         "elements›<media>›soundLevel (optional)": true,
         "elements›<media>›fadeInDur (optional)": true,
-        "elements›<media>›fadeOutDur (optional)": true
+        "elements›<media>›fadeOutDur (optional)": true,
+
+        "elements›<voice>›language": true
     }
 }
