@@ -63,8 +63,8 @@
 
         "elements›<voice>›xml:lang (required)": false,
         "elements›<voice>›gender (optional)": false,
-        "elements›<voice>age (optional)": false,
-        "elements›<voice>variant (optional)": false,
+        "elements›<voice>›age (optional)": false,
+        "elements›<voice>›variant (optional)": false,
         "elements›<voice>›name (optional)": true,
 
         "attribute values›<phoneme>›alphabet=\"ipa\"": true,
